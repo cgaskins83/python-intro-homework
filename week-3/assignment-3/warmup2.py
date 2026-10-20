@@ -1,4 +1,4 @@
-user_age = float(input("What is your age? "))
+user_age = int(input("What is your age? "))
 
 if user_age <= 12:
     print("You are an Child.")

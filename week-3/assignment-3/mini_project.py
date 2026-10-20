@@ -20,4 +20,8 @@ elif day == "sunday" and time == "afternoon":
 elif day == "sunday" and time == "evening":
     print("Suggestion: lets have a family dinner and then play with the dogs.")
 else:
-    print("Sorry, I don't recognize that day. Try: Monday, Friday, Sunday")
+    if day != "monday".lower() and day != "friday".lower() and day != "sunday".lower():
+        print("Sorry, I don't recognize that day. Try: Monday, Friday, Sunday")
+    else:
+        print("Sorry, I don't recognize that time. Try: Morning, Afternoon, Evening")
+        
