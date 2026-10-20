@@ -1,0 +1,5 @@
+print(f"{not True and False} #if its not true then it will be false")
+print(f"{True or False and False} #if its true or false and false then it will be true")
+print(f"{not (5 > 3)} #if 5 is not greater than 3 then it will be false")
+print(f"{10 == 10 and 4 != 4} #if 10 is equal to 10 and 4 is not equal to 4 then it will be false")
+print(f"{not False or not True} #if not false or not true then it will be true")
