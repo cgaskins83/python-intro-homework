@@ -44,13 +44,12 @@ for student in students:
 
 
 for student in students: 
-    total += student["score"]
-    average = total / len(students) 
-  
+    total += student["score"]     
 # Add Class Subjects
     subject = student["subject"]
     subjects_offered.add(subject)
 
+average = total / len(students) 
 
 
 print(f"Top scorer: {highest_scorer} ({highest_score})")
