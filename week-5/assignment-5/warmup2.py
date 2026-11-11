@@ -9,10 +9,10 @@ while True:
         if value > 0: 
             print(f"You entered {value} a positive integer. ")
             break
-        elif value < 0: 
+        elif value <= 0: 
             print("This is not a valid entry. Try again. ") 
 
-    except TypeError: 
+    except ValueError: 
         print("This is not a valid entry. Try again. ")
     
 
