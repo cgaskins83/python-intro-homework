@@ -72,7 +72,7 @@ def main():
             print(f"Here is your sorted list: {reordered_list}! ")
         else: 
             print("Quitting")
-        break    
+          
 
 
 main()
