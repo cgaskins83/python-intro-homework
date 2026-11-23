@@ -7,6 +7,7 @@ path = os.path.join("..", "data", "expenses.csv")
 
 if not os.path.exists(path):
     print("Error file not found")
+    exit()
 else: 
     food_expenses = []
     total = 0.0 
@@ -19,7 +20,7 @@ else:
                total += row["amount"]
     today = datetime.now()
     with open("food_report.txt", "w") as file:
-        file.write(f"Food Expense Report - generated {today.strftime('%B %d, %Y')} \n")
+        file.write(f"Food Expense Report — generated {today.strftime('%B %d, %Y')} \n")
     
         for food in food_expenses:
             file.write(f"{food['date']}: ${food['amount']:.2f} \n")
